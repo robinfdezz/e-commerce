@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./recursos/iconos/login.png" type="image/x-icon">
+    <!--? Fuente de letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!--? Hojas de estilo para cada seccion -->
+    <link href="./style_general.css" rel="stylesheet" />
+    <link href="./style/headerr/header.css" rel="stylesheet" />
+    <link href="./style/login/login.css" rel="stylesheet" />
+    <link href="./style/informacion_contacto/informacion.css" rel="stylesheet" />
+    <link href="./style/footer/footer.css" rel="stylesheet" />
+    <link href="./style/informacion_contacto/informacion_input.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+    <section class="cabecera">
+        <header class="header_cabecera">
+            <div class="header_contenedor">
+                <img src="./recursos/imagenes/Logo.png" alt="logo" class="header_logo">
+                <!-- Barra de búsqueda -->
+                <form action="/buscar" method="GET" class="header_buscador">
+                    <input type="text" id="search" name="q" placeholder="¿Qué deseas buscar?" class="header_input">
+                    <img src="./recursos/iconos/lupa.png" alt="" class="header_lupa">
+                </form>
+            </div>
+        </header>
+    </section>
+
+    <section class="login">
+        <div class="login_contenedor">
+            <div class="login_formulario--contenedor">
+                <h2 class="login_titulo">Iniciar sección</h2>
+                <form action="" method="POST" class="login_formulario">
+                    <div class="input-container">
+                        <input class="login_input login_input-email" type="email" id="email" name="email"
+                            required placeholder="Escriba su correo electronico" minlength="5" maxlength="60" data-tipo="email">
+                        <!-- <span class="input-message-error">Este campo no es valido</span> -->
+                    </div>
+                    <div class="input-container">
+                        <input class="login_input login_input-contrasenha" type="password" id="myInput" name="password"
+                            required placeholder="Escriba su contraseña" minlength="8" maxlength="50" data-tipo="password">
+                            <i class="toggle-icon"></i>
+                        <!-- <span class="input-message-error">Este campo no es valido</span> -->
+                    </div>
+                    <button class="login_boton" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="informacion">
+        <div class="informacio_contenedor">
+            <div class="informacion_links">
+                <img src="/recursos/imagenes/Logo.png" class="informacion_logo">
+                <ul class="informacion_lista">
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Quienes somos</a></li>
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Política de privacidad</a></li>
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Programa de fidelidad</a></li>
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Nuestras tiendas</a></li>
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Quiero ser franquiciado</a></li>
+                    <li class="informacion_lista--links"><a href="" class="informacion_lista--url">Anúnciese aquí</a></li>
+                </ul>
+            </div>
+            <div class="informacion_contacto">
+                <h3 class="informacion_contacto--titulo">Hable con nosotros</h3>
+                <form class="informacion_contacto--formulario" action="">
+
+                    <div class="input-container--informacion">
+                        <input class="contacto_input--informacion contact_input-nombre--informacion" type="text" id="nombre" name="nombre"
+                            required placeholder="Nombre" minlength="5" maxlength="50" data-tipo="nombre">
+                        <label class="input-label--informacion" for="nombre">Nombre</label>
+                    </div>
+
+                    <textarea class="contacto_text-area--informacion  contact_input-mensaje--informacion" id="mensaje" name="mensaje" required placeholder="Mensaje" minlength="10" maxlength="300"></textarea>
+                    <button class="contacto_boton--informacion" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <footer class="footer_contenedor">
+            <h2 class="footer_primer-texto">Desarrollado por RobinDeveloper</h2>
+            <h3 class="footer_segundo-texto">2023</h3>
+        </footer>
+    </section>
+
+    <script src="./js/script_contrasenha.js"></script>
+    <script src="./js/boton_buscador.js"></script>
+
+</body>
+
+</html>

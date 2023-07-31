@@ -1,0 +1,238 @@
+.informacio_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAF2FD;
+}
+
+.informacion_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion_logo{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.informacion_lista{
+    margin: 30px 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion_lista--links{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-family: 'Raleway';
+}
+
+.informacion_lista--url{
+    text-decoration: none;
+    color: #464646;
+    transition: 0.2s ease;
+}
+
+.informacion_lista--url:hover{
+    color: #2A7AE4;
+    transition: 0.2s ease;
+}
+
+.informacion_contacto{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.informacion_contacto--titulo{
+    font-family: 'Raleway';
+    color: #464646;
+    font-size: 1.4rem;
+}
+
+.informacion_contacto--formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container--informacion{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contacto_input--informacion{
+    border: none;
+    height: 70px;
+    font-family: 'Raleway';
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #464646;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.345);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contacto_text-area--informacion {
+    font-family: 'Raleway';
+    padding: 20px;
+    height: 100px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 1.2rem;
+    color: #464646;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.345);
+    margin-bottom: 15px;
+}
+
+.contacto_input--informacion:focus {
+    outline: none;
+    border-bottom: 3px solid #2A7AE4;
+}
+
+.contacto_input--informacion::placeholder {
+    opacity: 0.5;
+}
+
+.contacto_text-area--informacion:focus {
+    outline: none;
+    border-bottom: 3px solid #2A7AE4;
+}
+
+.contacto_text-area--informacion::placeholder {
+    opacity: 0.5;
+}
+
+.contacto_boton--informacion{
+    width: 50%;
+    height: 60px;
+    border: none;
+    background-color: #2A7AE4;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contacto_boton--informacion:hover{
+    background-color: #1250a0;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para teléfono (hasta 600px) */
+@media screen and (max-width: 600px) {
+}
+
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .informacio_contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding-top: 20px;
+    }
+
+    .informacion_links{
+        flex-direction: column;
+        width: 35%;
+        align-items: start;
+        padding: 0 0 0 25px;
+    }
+
+    .informacion_contacto--titulo{
+        margin-top: 10px;
+    }
+
+    .informacion_logo{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .informacion_lista{
+        margin: 20px 0 0 0;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .informacion_lista--links{
+        margin-bottom: 40px;
+    }
+
+
+    .informacion_contacto{
+        width: 65%;
+        padding: 0 20px 0 0;
+    }
+
+
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .informacio_contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: 80px 80px;
+    }
+
+    .informacion_links{
+        flex-direction: row;
+        width: 50%;
+        align-items: start;
+        justify-content: space-between;
+        padding: 0 0 0 25px;
+    }
+
+    .informacion_contacto--titulo{
+        margin-top: 10px;
+    }
+
+    .informacion_logo{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .informacion_lista{
+        margin: 20px 0 0 70px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .informacion_lista--links{
+        margin-bottom: 30px;
+    }
+
+    .informacion_contacto{
+        width: 50%;
+        padding: 0 20px 0 0;
+    }
+
+    .contacto_input--informacion{
+        max-width: 550px;
+    }
+
+    .contacto_text-area--informacion {
+        max-width: 550px;
+    }
+}

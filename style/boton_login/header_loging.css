@@ -1,0 +1,71 @@
+.header_contenedor{
+    width: 100%;
+    margin-left: 0px;
+}
+
+.header_logo{
+    margin: 0 0 0 10px;
+}
+
+.header_boton-login{
+    background-color: #ffffff;
+    width: 200px;
+    height: 50px;
+    margin: 0 0 0 20px;
+    border: 2px solid #2A7AE4;
+    font-family: 'Raleway';
+    font-size: 1.1rem;
+    color: #2A7AE4;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header_buscador{
+    width: 55%;
+    margin-right: 7px;
+}
+
+.header_lupa{
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+}
+
+.header_input{
+    margin: 0 10px 0 0;
+}
+
+.header_boton-login--oculto{
+    display: none;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) {
+    .header_contenedor{
+        justify-content: space-around;
+    }
+
+    .header_logo{
+        margin: 0px;
+    }
+.header_boton-login{
+        order: 2;
+        margin: 0;
+        padding: 0;
+    }
+
+.header_lupa{
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+}
+
+.header_input{
+    margin: 0;
+}
+}

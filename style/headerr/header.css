@@ -1,0 +1,167 @@
+.header_contenedor {
+    display: flex;
+    margin: 30px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 150px;
+    height: 100%;
+}
+
+.header_buscador {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    max-width: 300px;
+}
+
+.header_input {
+    margin: 0 0 0 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 200;
+    width: 100%;
+    height: 100%;
+    color: #464646;
+    background-color: #F5F5F5;
+    padding: 0 40px 0 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.header_input:focus {
+    outline-width: 3px;
+    outline-offset: 5px;
+    outline-color: #2A7AE4;
+}
+
+.header_input[type="text"]::placeholder {
+    color: #787878;
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+.header_lupa {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    cursor: pointer;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para teléfono (hasta 600px) */
+@media screen and (max-width: 600px) {
+    .header_buscador {
+        display: flex;
+        justify-content: end;
+        width: 60%;
+        height: 50px;
+}
+
+    .header_input {
+        display: none;
+}
+
+    .header_lupa {
+        width: 30px;
+        height: 30px;
+        opacity: 0.5;
+        transform: translateX(-10px);
+        position: absolute;
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+}
+
+.header_lupa:hover {
+    opacity: 0.9;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+}
+
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .header_contenedor {
+        margin: 30px 60px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin: 0 20px 0 0;
+    }
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .header_contenedor {
+        margin: 30px 0 30px 150px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin: 0 20px 0 0;
+    }
+}
+
+
+/*! Clases para agregar al buscador*/
+.header_input-event {
+    display: flex;
+    padding: 0 50px 0 10px;
+    animation: buscadorAmpliando 0.3s;
+    -webkit-animation: buscadorAmpliando 0.3s;
+    animation-iteration-count: 1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+@keyframes buscadorAmpliando {
+    0% {
+        width: 0%;
+        height: 60%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes buscadorAmpliandoSalida {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    95% {
+        width: 0%;
+        height: 60%;
+    }
+    100% {
+        display: none;
+    }
+}

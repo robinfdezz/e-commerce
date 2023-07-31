@@ -1,0 +1,107 @@
+.login_contenedor {
+    background-color: #F5F5F5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.login_formulario--contenedor {
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.login_titulo {
+    margin: 0;
+    font-family: 'Raleway';
+    color: #464646;
+    margin-bottom: 15px;
+}
+
+.login_formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.login_input {
+    width: 95%;
+    max-width: 350px;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #464646;
+    border-bottom: 3px solid rgb(231, 229, 229);
+}
+
+.login_input:focus {
+    outline-width: 3px;
+    outline-offset: 5px;
+    outline-color: #2A7AE4;
+}
+
+.login_input[type="email"]::placeholder {
+    color: #858585;
+    font-size: 1.2rem;
+}
+
+.login_input[type="password"]::placeholder {
+    color: #858585;
+    font-size: 1.2rem;
+}
+
+.login_boton {
+    width: 50%;
+    height: 60px;
+    max-width: 180px;
+    border: none;
+    background-color: #2A7AE4;
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+/* Estilo para el ícono de cambio de tipo de input */
+.toggle-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../recursos/iconos/ojo.png");
+    background-size: cover;
+    cursor: pointer;
+    top: 39%;
+    right: -40px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.toggle-icon-nomostrar {
+    background-image: url("../../recursos/iconos/invisible.png");
+}

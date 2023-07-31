@@ -1,0 +1,29 @@
+.input-container--informacion {
+    position: relative;
+}
+
+.contacto_input--informacion::placeholder {
+    visibility: hidden;
+    color: #e70505;
+}
+
+.input-label--informacion {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: #b1b1b1;
+    transition: all 0.25s;
+    font-family: 'Raleway';
+}
+
+.contacto_input--informacion:not(:placeholder-shown)+.input-label--informacion,
+.contacto_input--informacion:focus+.input-label--informacion {
+    font-size: 0.875rem;
+    top: 0.1rem;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
